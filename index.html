@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Encryptor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>PDF Encryptor</h1>
+
+    <!-- Step 1: Pick a file -->
+    <label class="step-label">Step 1: Choose a PDF</label>
+    <div id="dropZone">
+      <p>Drag & drop a PDF here or click to browse</p>
+    </div>
+    <input type="file" id="pdfFile" accept="application/pdf">
+    <div id="fileInfo"></div>
+
+    <!-- Step 2: Set password -->
+    <label class="step-label">Step 2: Set a password</label>
+    <input type="password" id="password" placeholder="Enter password (min 6 characters)">
+    <div id="strengthBar"><div id="strengthFill"></div></div>
+    <span id="strengthText"></span>
+    <input type="password" id="confirmPassword" placeholder="Confirm password">
+
+    <!-- Step 3: Encrypt -->
+    <label class="step-label">Step 3: Encrypt & download</label>
+    <button id="encryptBtn">Encrypt & Download</button>
+
+    <p id="status"></p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
